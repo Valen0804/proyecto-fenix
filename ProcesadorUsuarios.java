@@ -1,10 +1,19 @@
 import java.util.List;
 
+/**
+ * Clase encargada de procesar listas de usuarios y clasificarlos por rol.
+ */
 public class ProcesadorUsuarios {
 
     private static final int ROL_ADMIN = 1;
     private static final int ROL_INVITADO = 2;
 
+    /**
+     * Procesa una lista de usuarios en formato "nombre:rol".
+     *
+     * @param usuarios lista de usuarios
+     * @return cadena con usuarios clasificados por rol
+     */
     public String procesarLista(List<String> usuarios) {
         String admins = "";
         String invitados = "";
